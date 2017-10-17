@@ -1,0 +1,82 @@
+# Hexo配置文件
+
+title: X栢放
+subtitle: 喜欢简单美
+description:
+author: 兴百放
+language: zh-CN
+timezone:
+
+url: https://xingbaifang.com
+root: /
+permalink: :category/:title.html
+permalink_defaults:
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+
+# 在新标签页中打开外部链接
+external_link: true
+
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: true
+  tab_replace:
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 时间格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# 分页
+per_page: 15
+pagination_dir: page
+
+
+# 使用light主题: https://github.com/hexojs/hexo-theme-light
+theme: light
+
+
+# RSS订阅
+feed:
+    type: atom
+    path: atom.xml
+    limit: 10
+
+
+# 网站地图
+sitemap:
+baidusitemap:
+
+# neat_enable: true
+
+# 部署到GitHub Pages
+# deploy:
+#   type: git
+#   repo: git@github.com:kiwenlau/kiwenlau.github.io.git
+#   branch: master
+deploy:
+  type: git
+  repo: https://github.com/xbf321/xbf321.github.io.git
+  branch: master
+
